@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>D3 Page Template</title>
-        <script type="text/javascript" src="d3.js"></script>
-    </head>
-    <body>
-        <script type="text/javascript">
-            d3.select("body").append("p").text("New paragraph!");
-            d3.csv("food.csv", function(data) {
-              console.log(data);
-              });
-        </script>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Context</title>
+		<script type="text/javascript" src="d3.js"></script>
+		<style type="text/css">
+
+			/* Lots of new CSS rules! */
+
+			/* HTML page styles */
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				background-color: #eee;
+				justify-content: center;
+				margin: 0 auto;
+				width: window.innerWidth;
+
+			}
+
+			#container {
+	     	margin: 40px auto 20px auto;
+				padding: 100px 40px 40px 100px;
+				background-color: white;
+				box-shadow: 0 0 20px #ccc;
+			}
+
+			h1 {
+				margin-bottom: 25px;
+				font-size: 24px;
+				font-weight: bold;
+			}
+
+			h2 {
+				margin-top: 30px;
+				margin-left: 20px;
+				font-size: 14px;
+			}
+
+		
+
+		</style>
+	</head>
+	<body>
+
+		<!-- New HTML structure and content! -->
+		<div id='center'>
+<div id="container">
+
+
+			<h1>U.S. Explainer page </h1>
+
+			<h2>The dataset of size 673 MB contains flight connections between all airports in USA throughout year 2008.  The dataset provides 29 variables, however not all of them are being used for the visualization.</h2>
+            
+            <h2>When we were looking for inspiration, we saw visualizations of flight data which seemed to be a great opportunity to apply skills we have learnt in class. Nonetheless, all visualizations where focused on many topic, but none of them said a story about delays. For this reason, we have decided to tell this important story! Moreover, a desire to crush relatively big dataset convinced us to choose this one composing of roughly 7 million observations.  </h2> 
+    
+
+
+
+			<h2>lfjglfkxgldfkjgkdjgs;kldfjglkfjglksfjglkdjflgkjdg</h2>
+
+			<h2>kdslf;ksgkdjfgkjdflgkj dfj glkf jglkfjg lkfgjlfk gjflgj fkj</h2>
+
+			<div id="footer">
+				<p><strong>Source:</strong> kc;ldfgkfdjgkdfjglkdfj kljgl jfklg jfklgjlfkgj lfkjglk jglfkgj</p>
+			</div>
+</div>
+
+
+</center>
+		
+	</body>
 </html>
+
