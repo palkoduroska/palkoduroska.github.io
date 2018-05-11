@@ -21,7 +21,7 @@
 			}
 
 			#container {
-	     			margin: 10px 40px 10px 40px;
+	     			margin: 10px auto 10px auto;
 				padding: 40px 100px 10px 100px;
 				background-color: white;
 				box-shadow: 0 0 20px #ccc;
@@ -42,7 +42,7 @@
 			margin-bottom: 25px;
 			font-size: 14px;
 			line-height: 18px;
-			allign: justify;}
+			}
 			
 
 		
@@ -58,32 +58,38 @@
 	<center>
 	<h1>Explainer page </h1>
 	</center>
-	<p>The dataset of size 673 MB contains flight connections between all airports in USA throughout year 2008.  The dataset provides 29 variables, however not all of them are being used for the visualization.</p>   
-        <p>When we were looking for inspiration, we saw visualizations of flight data which seemed to be a great opportunity to apply skills we have learnt in class. Nonetheless, all visualizations where focused on many topic, but none of them said a story about delays. For this reason, we have decided to tell this important story! Moreover, a desire to crush relatively big dataset convinced us to choose this one composing of roughly 7 million observations.  </p> 
-	<p>The goal of the visualization is to allow users to interactively explore information about arrival and departure delays in top 30 airports of USA. Therefore, we gave to the user ability to select desired airports, months/days through the brush-able timeline or amount of delays for each hour in a day via bar-chart.</p>
+	<p allign="justify">The dataset of size 673 MB contains flight connections between all airports in USA throughout year 2008.  The dataset provides 29 variables, however not all of them are being used for the visualization.</p>   
+        <p allign="justify">When we were looking for inspiration, we saw visualizations of flight data which seemed to be a great opportunity to apply skills we have learnt in class. Nonetheless, all visualizations where focused on many topic, but none of them said a story about delays. For this reason, we have decided to tell this important story! Moreover, a desire to crush relatively big dataset convinced us to choose this one composing of roughly 7 million observations.  </p> 
+	<p allign="justify">The goal of the visualization is to allow users to interactively explore information about arrival and departure delays in top 30 airports of USA. Therefore, we gave to the user ability to select desired airports, months/days through the brush-able timeline or amount of delays for each hour in a day via bar-chart.</p>
 	
 	
-	<p>Cleaning of the data was very simple due to high quality of the information. However, it was necessary to remove incorrect observations containing missing values. This procedure was followed by the filtering top 30 airports since original ~3000 airports would not make the visualization user friendly and result in too many connections. For this reason, we were able to analyse the connections between these top airports which is interesting for most of possible users.</p>
-	<p>Initially, we had a database with 7.009.728 number of flights in 2008. The information was a lot, so we decided to reduce it choosing the most important airports in the country. In particular, we chose 30 airports, which contains 33,71% of the database. Furthermore, we cleaned the information, aggregating it to have the number of flights per hour, independently from the minutes. Finally, we removed those variables we had decided not to use in our visualization in order to make processes as fast as possible.</p>
-	
-		
-	<p>We have decided to use Partitioned poster genre which is, according to our opinion, the most suitable for this kind of visualization. It allows user to see many features and interactions while exploring the visualization.</p>
-	<p>In the visualization, following tools from Visual Narrative are used: Consistent visual platform (It does not change, only filtering), Feature distinction (selecting on timeline,  choosing delays?) and Animated transitions (transitions in the bar-chart).</p>
-	<p>In the visualization, following tools from Narrative Structure are used: User directed path, Hoovering Highlighting (hoovering over airports, lines), Filtering/Selection (timeline, buttons) and Introductory text.</p>
+	<p allign="justify">Cleaning of the data was very simple due to high quality of the information. However, it was necessary to remove incorrect observations containing missing values. This procedure was followed by the filtering top 30 airports since original ~3000 airports would not make the visualization user friendly and result in too many connections. For this reason, we were able to analyse the connections between these top airports which is interesting for most of possible users.</p>
+	<p allign="justify">Initially, we had a database with 7.009.728 number of flights in 2008. The information was a lot, so we decided to reduce it choosing the most important airports in the country. In particular, we chose 30 airports, which contains 33,71% of the database. Furthermore, we cleaned the information, aggregating it to have the number of flights per hour, independently from the minutes. Finally, we removed those variables we had decided not to use in our visualization in order to make processes as fast as possible.</p>
 	
 		
-	<p>Firstly, the essential part of the visualization is the map of USA with top 30 airports displayed as yellow circles with radius corresponding to . Whenever a user hoovers over an airport, basic info about the airport appears. If an airport is clicked, connections represented with lines to other airports appear too. Each line contains a toolbox with basic information about the selected connection. Secondly, a time line is added at the bottom of the visualization where user can select a period in which the flight occurred during the year 2008. Thirdly, the combination of bar chart and line chart shows two kind of information. The number of arrival and departure delays of the selected airports as a sum per hour of the day represented by the left axis. Moreover, line of the bar-chart shows the ratio of delayed flights with respect to number of flights for that particular hour represented by the axis on the right.</p>
-	<p> Combination of all features above allow user to easily access the information about which airport, airport connection, month or hour is the most prone to delays so it can be helpful for people interested in traveling around the USA.</p>
+	<p allign="justify">We have decided to use Partitioned poster genre which is, according to our opinion, the most suitable for this kind of visualization. It allows user to see many features and interactions while exploring the visualization.</p>
+	<p allign="justify">In the visualization, following tools from Visual Narrative are used: Consistent visual platform (It does not change, only filtering), Feature distinction (selecting on timeline,  choosing delays?) and Animated transitions (transitions in the bar-chart).</p>
+	<p allign="justify">In the visualization, following tools from Narrative Structure are used: User directed path, Hoovering Highlighting (hoovering over airports, lines), Filtering/Selection (timeline, buttons) and Introductory text.</p>
 	
 		
-	<p> The possibility of choosing airports and periods of time give the user different ways to use our visualization depending on what they are looking for. This visualization also shows a lot of information about the top airport in USA: You can see the number of flights and all the connections thanks to the toolbox display. The bar chart also provides important information about delays. The possibility of using the buttons to filter how much delay you want to see in arrivals and departures can show a clear image of what happened. In addition, lines showing the ratios let the user know the percentage of delays respect the number of flights. </p>
-	<p> It would have been interesting adding the reason for the delays, which is some information we have in the database and we are not using it. Also, adding a bar chart showing the number of cancel flights per airport might have been a good improvement to our visualization. </p>
-	<p> Contribution </p>
-</div>
+	<p allign="justify">Firstly, the essential part of the visualization is the map of USA with top 30 airports displayed as yellow circles with radius corresponding to . Whenever a user hoovers over an airport, basic info about the airport appears. If an airport is clicked, connections represented with lines to other airports appear too. Each line contains a toolbox with basic information about the selected connection. Secondly, a time line is added at the bottom of the visualization where user can select a period in which the flight occurred during the year 2008. Thirdly, the combination of bar chart and line chart shows two kind of information. The number of arrival and departure delays of the selected airports as a sum per hour of the day represented by the left axis. Moreover, line of the bar-chart shows the ratio of delayed flights with respect to number of flights for that particular hour represented by the axis on the right.</p>
+	<p allign="justify"> Combination of all features above allow user to easily access the information about which airport, airport connection, month or hour is the most prone to delays so it can be helpful for people interested in traveling around the USA.</p>
+	
+		
+	<p allign="justify"> The possibility of choosing airports and periods of time give the user different ways to use our visualization depending on what they are looking for. This visualization also shows a lot of information about the top airport in USA: You can see the number of flights and all the connections thanks to the toolbox display. The bar chart also provides important information about delays. The possibility of using the buttons to filter how much delay you want to see in arrivals and departures can show a clear image of what happened. In addition, lines showing the ratios let the user know the percentage of delays respect the number of flights. </p>
+	<p allign="justify"> It would have been interesting adding the reason for the delays, which is some information we have in the database and we are not using it. Also, adding a bar chart showing the number of cancel flights per airport might have been a good improvement to our visualization. </p>
+	<p allign="justify"> Contribution </p>
+			</div>
 
-
 </div>
 		
-	</body>
+<script type="text/javascript">
+w_window = 0.9*window.innerWidth;
+h_window = 0.9*window.innerHeight;
+margin = 0.1
+w_window = (1-margin)*w_window;
+document.body.style.height = h_window + "px";
+document.body.style.width = w_window + "px";
+</script>
 </html>
 
